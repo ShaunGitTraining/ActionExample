@@ -16,5 +16,5 @@ jobs:
         run:  |
           pwd
           ls -la
-          cat README.MD
+          cat README.md
    
