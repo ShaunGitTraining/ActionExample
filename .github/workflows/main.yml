@@ -1,0 +1,11 @@
+name: sample action
+on:
+  push: 
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+jobs:
+  job1:
+    steps:
+      - name: print
+        run echo README.MD
