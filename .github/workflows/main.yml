@@ -6,6 +6,18 @@ on:
     branches: [ main ]
 jobs:
   job1:
+
+    runs-on: ubuntu-latest
     steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.pull_request.head.sha }}
+
       - name: print
-        run echo README.MD
+        run:  |
+          pwd
+          ls -la
+          git branch
+          cat README.md
+   
