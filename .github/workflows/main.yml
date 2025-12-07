@@ -9,11 +9,12 @@ jobs:
 
     runs-on: ubuntu-latest
     steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
       - name: print
         run:  |
           pwd
-          ls
-          cd ..
-          ls
-          pwd
+          ls -la
+          cat README.MD
    
