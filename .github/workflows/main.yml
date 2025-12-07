@@ -11,3 +11,6 @@ jobs:
     steps:
       - name: print
         run: pwd
+        run: ls
+        run: cd ..
+        run: ls
