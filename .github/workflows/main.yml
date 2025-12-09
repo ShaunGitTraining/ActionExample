@@ -8,4 +8,4 @@ jobs:
   job1:
     steps:
       - name: print
-        run echo README.MD
+        echo "Hello World"
